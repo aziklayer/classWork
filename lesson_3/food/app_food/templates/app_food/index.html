@@ -5,22 +5,10 @@
 <div>
     <ul>
         {% for category in categories %}
-        <li><a href="{% url 'category' category.id %}">{{category.name}}</a></li>
+            <li><a href="{% url 'category' category.id %}" >{{category.name}}</a></li>
         {% endfor %}
     </ul>
-
-
-<!--    <ul>-->
-<!--        {% for product in products %}-->
-<!--            <li>-->
-<!--                <h3>{{product.name}}</h3>-->
-<!--                <p>{{product.description}}</p>-->
-<!--                <button>{{product.price}} ₽.</button>-->
-<!--            </li>-->
-<!--        {% empty %}-->
-<!--        <h3>Продуктов пока нет</h3>-->
-<!--        {% endfor %}-->
-<!--    </ul>-->
 </div>
 
 {% endblock %}
+
