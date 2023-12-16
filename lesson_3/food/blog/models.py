@@ -27,7 +27,7 @@ class News(models.Model):
     ]
     activity_flag = models.CharField(max_length=1, choices=status_choices,
                                      default='i')
-    # author = models.ForeignKey(Author, verbose_name='автор', on_delete=models.CASCADE)
+    author = models.ForeignKey(Author, verbose_name='автор', on_delete=models.CASCADE)
 
     class Meta:
         db_table = 'news'
