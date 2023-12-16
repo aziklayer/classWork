@@ -12,7 +12,14 @@
         <a href="mailto:{{news.author.email}}">{{news.author.email}}
         </a>
     </h4>
-
+    <div class="comments">
+        <h3>Оставьте комментарий: </h3>
+        <form method="post">
+            {% csrf_token %}
+            {{comment_form.as_p}}
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
 </div>
 
 {% endblock %}
