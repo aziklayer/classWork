@@ -117,7 +117,8 @@ USE_L10N = True
 
 LANGUAGES = [
     ('ru', 'Русский'),
-    ('en', 'Английский')
+    ('en', 'Английский'),
+    ('tt', 'Татарский')
 ]
 
 LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
